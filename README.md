@@ -1,0 +1,1 @@
+BINOM.DIST.RANGE function
