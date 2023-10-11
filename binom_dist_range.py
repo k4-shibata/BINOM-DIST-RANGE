@@ -6,8 +6,8 @@ def binom_dist_range(Trials, Probability_s, Number_s, Number_s2=None):
     else:
         return sum(binom.pmf(x, Trials, Probability_s) for x in range(Number_s, Number_s2 + 1))
 
-# 例として Trials=10, Probability_s=0.5, Number_s=3 を使います
-# Using the example with Trials=10, Probability_s=0.5, and Number_s=3.
+# 例として Trials=10, Probability_s=0.5, Number_s=3, Number_s2 = 7 を使います
+# Using the example with Trials=10, Probability_s=0.5, Number_s=3, and Number_s2 = 7.
 Trials = 10
 Probability_s = 0.5
 Number_s = 3
