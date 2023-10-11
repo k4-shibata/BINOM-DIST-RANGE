@@ -1,5 +1,7 @@
 # BINOM.DIST.RANGE関数
-この関数はMicrosoft ExcelのBINOM.DIST.RANGE関数をpythonで再現した物です。
+この関数はMicrosoft ExcelのBINOM.DIST.RANGE関数をpythonで再現した物です。  
+参照元：[https://support.microsoft.com/ja-jp/office/binom-dist-range-%E9%96%A2%E6%95%B0-17331329-74c7-4053-bb4c-6653a7421595](https://support.microsoft.com/ja-jp/office/binom-dist-range-%E9%96%A2%E6%95%B0-17331329-74c7-4053-bb4c-6653a7421595)
+
 
 ## 説明
 二項分布を使用した試行結果の確率を返します。
