@@ -21,13 +21,13 @@ The binom_dist_range function syntax has the following arguments.
 - **Number_s2**<br>
   Optional. If provided, returns the probability that the number of successful trials will fall between Number_s and number_s2. Must be greater than or equal to Number_s and less than or equal to Trials.
 
-## 解説
+## Remarks
 - The following equation is used:<br>
   $$\sum_{k=S}^{S2} \binom{N}{k} p^k (1-p)^{N-k}$$
   
 - In the equation above, N is Trials, p is Probability_s, s is Number_s, s2 is Number_s2, and k is the iteration variable.
 
-## 使用例
+## Example
 | Formula  | Description | Result |
 | - | - | - |
 | binom_dist_range(60, 0.75, 48) | Returns the binomial distribution based on the probability of 48 successes in 60 trials and a 75% probability of success (0.084, or 8.4%). | 0.083975 |  
