@@ -1,7 +1,15 @@
 # BINOM.DIST.RANGE関数
 この関数はMicrosoft ExcelのBINOM.DIST.RANGE関数をpythonで再現した物です。  
 参照元：[https://support.microsoft.com/ja-jp/office/binom-dist-range-%E9%96%A2%E6%95%B0-17331329-74c7-4053-bb4c-6653a7421595](https://support.microsoft.com/ja-jp/office/binom-dist-range-%E9%96%A2%E6%95%B0-17331329-74c7-4053-bb4c-6653a7421595)
+```python
+from scipy.stats import binom
 
+def binom_dist_range(Trials, Probability_s, Number_s, Number_s2=None):
+    if Number_s2 is None:
+        return binom.pmf(Number_s, Trials, Probability_s)
+    else:
+        return sum(binom.pmf(x, Trials, Probability_s) for x in range(Number_s, Number_s2 + 1))
+```
 
 ## 説明
 二項分布を使用した試行結果の確率を返します。
