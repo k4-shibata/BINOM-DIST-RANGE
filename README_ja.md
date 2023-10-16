@@ -18,16 +18,16 @@ def binom_dist_range(Trials, Probability_s, Number_s, Number_s2=None):
 binom_dist_range(試行回数, 確率_s, 数値_s, [数値_s2])  
 binom_dist_range関数の構文には次の引数があります。
 
-- **試行回数**<br>
+- **試行回数（Trials）**<br>
   必須。独立した試行の回数。0以上である必要があります。
 
-- **確率**<br>
+- **確率（Probability_s）**<br>
   必須。各試行での成功確率。0以上1以下である必要があります。
 
-- **数値**<br>
+- **数値（Number_s）**<br>
   必須。試行での成功回数。0以上Trials以下である必要があります。
 
-- **数値**<br>
+- **数値（Number_s2）**<br>
   オプション。指定した場合、成功した試行の回数がNumber_sとnumber_s2の間に収まる確率が返されます。Number_s以上Trials以下である必要があります。
 
 ## 解説
