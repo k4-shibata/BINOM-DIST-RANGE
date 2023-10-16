@@ -1,6 +1,15 @@
 # BINOM.DIST.RANGE function
 This function reproduces the BINOM.DIST.RANGE function in Microsoft Excel using Python.  
 Source:[https://support.microsoft.com/en-us/office/binom-dist-range-function-17331329-74c7-4053-bb4c-6653a7421595](https://support.microsoft.com/en-us/office/binom-dist-range-function-17331329-74c7-4053-bb4c-6653a7421595)
+```python
+from scipy.stats import binom
+
+def binom_dist_range(Trials, Probability_s, Number_s, Number_s2=None):
+    if Number_s2 is None:
+        return binom.pmf(Number_s, Trials, Probability_s)
+    else:
+        return sum(binom.pmf(x, Trials, Probability_s) for x in range(Number_s, Number_s2 + 1))
+```
 
 ## Description
 Returns the probability of a trial result using a binomial distribution.
